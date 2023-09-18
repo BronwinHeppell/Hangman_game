@@ -1,0 +1,72 @@
+
+h1{
+    color: rgb(156, 117, 193);
+    font-style: italic;
+ text-decoration: overline;
+    
+}
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 90%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 25%;
+    width: 50%;
+  }
+}
+body{
+    border: solid;
+    border-radius: 35px;
+    text-align: center;
+    
+}
+#wordContainer {
+    margin-top: 1px;
+    font-size: 1px;
+    
+  }
+  
+  #guessContainer {
+    margin-top: 20px;
+  
+  }
+  
+  #guessedLetters {
+    margin-top: 15px;
+  }
+  
+  #guessedLetters p {
+    margin-bottom: 10px;
+  }
+  
+  #letters {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #letters li {
+    display:inline-block;
+    margin-right: 5px;
+  }
+  
+  #guessInput {
+    padding: 5px;
+  }
+  
+  #guessButton {
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  #resetGameButton {
+    padding: 1px 5px;
+    margin-bottom: auto;
+    border-radius: 20px;
+
+  }

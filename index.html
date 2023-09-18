@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="styleSheet" href="styles.css" />
+    <title>Hangman</title>
+  </head>
+  <body>
+    <h1>Hangman Game</h1>
+    <p>
+      Guess the word! If you are wrong you are going to hang this poor man..
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-emoji-dizzy-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM4.146 5.146a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 1 1 .708.708l-.647.646.647.646a.5.5 0 1 1-.708.708L5.5 7.207l-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zm5 0a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zM8 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+        />
+      </svg>
+    </p>
+    <div id="wordContainer">
+      <span id="word"></span>
+      <div id="guessContainer">
+        <input type="text" id="guessInput" maxlength="1" autocomplete="off" />
+        <button id="guessButton">Guess</button>
+      </div>
+      <div id="guessedLetters">
+        <p>You've guessed almost enough times to kill him:</p>
+        <ul id="letters"></ul>
+      </div>
+      <div>
+        <button id="resetGameButton">Reset Game</button>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
